@@ -9,10 +9,16 @@
  //    after the API code downloads.
  function onYouTubeIframeAPIReady() {
     new YT.Player('player', {
-     videoId: 'M7lc1UVf-VE',
-     events: {
-       'onReady': onPlayerReady,
-       'onStateChange': onPlayerStateChange
-     }
+     videoId: 'An6LvWQuj_8',
+     playerVars: {
+       autoplay: true, //자동 재생
+       loop: true, //반복 재생
+       playlist: 'An6LvWQuj_8' //반복 재생할 유튜부 영상 ID 목록
+     },
+      events: {
+        onReady: function (event) {
+          event.target.mute() //음속어
+        }
+      }
    });
  }
