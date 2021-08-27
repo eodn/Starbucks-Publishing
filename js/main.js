@@ -54,8 +54,10 @@ new Swiper('.notice-line .swiper-container', {
   autoplay: true, // 자동 재생 여부
   loop: true // 반복 재생 여부
 })
+
 new Swiper('.promotion .swiper-container', {
   // direction: 'horizontal', // 수평 슬라이드
+  
   autoplay: { // 자동 재생 여부
     delay: 5000 // 5초마다 슬라이드 바뀜
   },
@@ -109,3 +111,16 @@ function floatingObject(selector, delay, size) {
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
+
+
+const spyEls = document.querySelectorAll('section.scoll-spy')
+spyEls.forEach(function (spyEls) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEls, //보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+
+})

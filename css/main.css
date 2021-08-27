@@ -34,11 +34,11 @@ a {
 }
 .btn:hover {
   background-color: #333;
-  color: #fff;
+  color: #FFF;
 }
 .btn.btn--reverse {
   background-color: #333;
-  color: #fff;
+  color: #FFF;
 }
 .btn.btn--reverse:hover {
   background-color: transparent;
@@ -49,7 +49,7 @@ a {
   border-color: #592B18;
 }
 .btn.btn--brown:hover {
-  color: #fff;
+  color: #FFF;
   background-color: #592B18;
 }
 .btn.btn--gold {
@@ -57,18 +57,17 @@ a {
   border-color: #D9AA8A;
 }
 .btn.btn--gold:hover {
-  color: #fff;
+  color: #FFF;
   background-color: #D9AA8A;
 }
 .btn.btn--white {
-  color: #fff;
-  border-color: #fff;
+  color: #FFF;
+  border-color: #FFF;
 }
-.btn.btn--gold:hover {
+.btn.btn--white:hover {
   color: #333;
-  background-color: #fff;
+  background-color: #FFF;
 }
-
 /* HAEDER */
 header {
   width: 100%;
@@ -555,8 +554,166 @@ margin-left: calc((819px * 3 + 20px) / -2);
   top: 350px;
   left: 150px;
 }
-.youtube .floating3 {
+
+
+/* SEASON PRODUCT  */
+.season-product {
+  background-image: url("../images/season_product_bg.jpg");
+}
+.season-product .inner {
+  height: 400px;
+}
+.season-product .floating3 {
   position: absolute;
-  bottom: -200px;
+  top: -200px;
   right: 0;
+}
+.season-product .text-group {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+.season-product .text-group .title {
+  margin-bottom: 10px;
+}
+.season-product .text-group .description {
+  margin-bottom: 15px;
+}
+.season-product .text-group .more {
+
+}
+
+/* RESERVE COFFEE */
+.reserve-coffee {
+  background-image: url("../images/reserve_bg.jpg");
+}
+.reserve-coffee .inner{
+  height: 400px;
+}
+.reserve-coffee .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .product {
+ position: absolute;
+ top: 0;
+ right: 0; 
+}
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+  background-image: url("../images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+.pick-your-favorite .text-group {
+  margin-left: 100px;
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}
+
+/* RESERVE STORE */
+.reserve-store {
+  background-image: url("../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-store .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+  transition: 1s;
+  position: absolute;
+}
+.reserve-store .medal .front{
+  transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .front{
+  transform: rotateY(180deg);
+}
+.reserve-store .medal .back {
+  transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.reserve-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.find-store {
+  background-image: url("../images/find_store_bg.jpg");
+}
+.find-store .inner {
+  height: 400px;
+}
+.find-store .texture1 {
+position: absolute;
+top: 0;
+left: 400px;
+}
+.find-store .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.find-store .picture {
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  position: absolute;
+}
+.find-store .picture1 {
+  top: -60px;
+  left: 0;
+}
+.find-store .picture2 {
+  top: 150px;
+  left: 250px;
+}
+.find-store .text-group {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+.find-store .text-group .title {
+  margin-bottom: 20px;
+}
+.find-store .text-group .description {
+  margin-bottom: 20px;
 }
